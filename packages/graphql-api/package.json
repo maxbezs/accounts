@@ -33,11 +33,11 @@
   },
   "homepage": "https://github.com/js-accounts/accounts",
   "peerDependencies": {
+    "@graphql-modules/core": "0.7.17",
     "@maxbezs/magic-link": "^0.0.5",
     "@maxbezs/password": "^0.0.5",
     "@maxbezs/server": "^0.0.5",
     "@maxbezs/types": "^0.0.5",
-    "@graphql-modules/core": "0.7.17",
     "graphql": "^14.6.0 || ^15.0.0",
     "graphql-tag": "^2.10.0"
   },
@@ -48,10 +48,6 @@
     "tslib": "2.3.1"
   },
   "devDependencies": {
-    "@maxbezs/magic-link": "^0.0.5",
-    "@maxbezs/password": "^0.0.5",
-    "@maxbezs/server": "^0.0.5",
-    "@maxbezs/types": "^0.0.5",
     "@graphql-codegen/add": "3.1.0",
     "@graphql-codegen/cli": "2.2.1",
     "@graphql-codegen/introspection": "2.1.0",
@@ -60,6 +56,10 @@
     "@graphql-codegen/typescript-resolvers": "2.3.2",
     "@graphql-codegen/typescript-type-graphql": "2.1.6",
     "@graphql-modules/core": "0.7.17",
+    "@maxbezs/magic-link": "^0.0.5",
+    "@maxbezs/password": "^0.0.5",
+    "@maxbezs/server": "^0.0.5",
+    "@maxbezs/types": "^0.0.5",
     "@types/jest": "27.0.2",
     "@types/request-ip": "0.0.37",
     "graphql": "14.6.0",
@@ -68,5 +68,6 @@
     "rimraf": "3.0.2",
     "ts-jest": "27.0.7",
     "ts-node": "10.4.0"
-  }
+  },
+  "gitHead": "9d0fc1f0b7bcaf43ebfcf76518a0084d11c853e6"
 }

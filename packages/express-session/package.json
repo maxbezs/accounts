@@ -60,5 +60,6 @@
     "lodash": "^4.17.21",
     "request-ip": "^2.1.3",
     "tslib": "2.3.1"
-  }
+  },
+  "gitHead": "9d0fc1f0b7bcaf43ebfcf76518a0084d11c853e6"
 }
