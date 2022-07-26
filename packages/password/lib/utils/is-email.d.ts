@@ -1,1 +1,1 @@
-export declare const isEmail: (email?: string | undefined) => boolean;
+export declare const isEmail: (email?: string) => boolean;

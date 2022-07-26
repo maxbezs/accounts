@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const two_factor_1 = require("@accounts/two-factor");
-const server_1 = require("@accounts/server");
+const two_factor_1 = require("@maxbezs/two-factor");
+const server_1 = require("@maxbezs/server");
 const utils_1 = require("./utils");
 const errors_1 = require("./errors");
 const validation_1 = require("./utils/validation");

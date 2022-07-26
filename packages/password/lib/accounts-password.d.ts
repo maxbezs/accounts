@@ -1,10 +1,10 @@
-import { User, TokenRecord, DatabaseInterface, AuthenticationService, ConnectionInformations, LoginResult, CreateUserServicePassword, LoginUserPasswordService } from '@accounts/types';
-import { TwoFactor, AccountsTwoFactorOptions } from '@accounts/two-factor';
-import { AccountsServer } from '@accounts/server';
+import { User, TokenRecord, DatabaseInterface, AuthenticationService, ConnectionInformations, LoginResult, CreateUserServicePassword, LoginUserPasswordService } from '@maxbezs/types';
+import { TwoFactor, AccountsTwoFactorOptions } from '@maxbezs/two-factor';
+import { AccountsServer } from '@maxbezs/server';
 import { ErrorMessages } from './types';
 export interface AccountsPasswordOptions {
     /**
-     * Two factor options passed down to the @accounts/two-factor service.
+     * Two factor options passed down to the @maxbezs/two-factor service.
      */
     twoFactor?: AccountsTwoFactorOptions;
     /**

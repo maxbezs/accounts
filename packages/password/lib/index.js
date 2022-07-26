@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AccountsPassword = exports.VerifyEmailErrors = exports.SendResetPasswordEmailErrors = exports.SendVerificationEmailErrors = exports.ResetPasswordErrors = exports.CreateUserErrors = exports.ChangePasswordErrors = exports.AddEmailErrors = void 0;
 const tslib_1 = require("tslib");
-const accounts_password_1 = (0, tslib_1.__importDefault)(require("./accounts-password"));
+const accounts_password_1 = tslib_1.__importDefault(require("./accounts-password"));
 exports.AccountsPassword = accounts_password_1.default;
-(0, tslib_1.__exportStar)(require("./types"), exports);
+tslib_1.__exportStar(require("./types"), exports);
 var errors_1 = require("./errors");
 Object.defineProperty(exports, "AddEmailErrors", { enumerable: true, get: function () { return errors_1.AddEmailErrors; } });
 Object.defineProperty(exports, "ChangePasswordErrors", { enumerable: true, get: function () { return errors_1.ChangePasswordErrors; } });
