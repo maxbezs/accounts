@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AccountsServer = void 0;
 const tslib_1 = require("tslib");
-const lodash_merge_1 = (0, tslib_1.__importDefault)(require("lodash.merge"));
-const jwt = (0, tslib_1.__importStar)(require("jsonwebtoken"));
-const emittery_1 = (0, tslib_1.__importDefault)(require("emittery"));
+const lodash_merge_1 = tslib_1.__importDefault(require("lodash.merge"));
+const jwt = tslib_1.__importStar(require("jsonwebtoken"));
+const emittery_1 = tslib_1.__importDefault(require("emittery"));
 const tokens_1 = require("./utils/tokens");
 const email_1 = require("./utils/email");
 const server_hooks_1 = require("./utils/server-hooks");

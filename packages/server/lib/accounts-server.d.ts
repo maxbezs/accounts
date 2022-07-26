@@ -1,4 +1,3 @@
-import * as jwt from 'jsonwebtoken';
 import Emittery from 'emittery';
 import { User, LoginResult, Tokens, Session, ImpersonationUserIdentity, ImpersonationResult, HookListener, AuthenticationService, ConnectionInformations } from '@maxbezs/types';
 import { AccountsServerOptions } from './types/accounts-server-options';

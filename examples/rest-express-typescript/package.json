@@ -10,10 +10,10 @@
     "test": "pnpm run build"
   },
   "dependencies": {
-    "@maxbezs/mongo": "^0.34.0",
-    "@maxbezs/password": "^0.32.2",
-    "@maxbezs/rest-express": "^0.33.1",
-    "@maxbezs/server": "^0.33.1",
+    "@maxbezs/mongo": "^0.0.5",
+    "@maxbezs/password": "^0.0.5",
+    "@maxbezs/rest-express": "^0.0.3",
+    "@maxbezs/server": "^0.0.5",
     "body-parser": "1.19.0",
     "cors": "2.8.5",
     "express": "4.17.1",

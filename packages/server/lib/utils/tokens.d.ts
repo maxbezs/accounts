@@ -7,9 +7,9 @@ export declare const generateAccessToken: ({ secret, payload, config, }: {
     secret: jwt.Secret;
     payload?: any;
     config: jwt.SignOptions;
-}) => string;
+}) => any;
 export declare const generateRefreshToken: ({ secret, payload, config, }: {
     secret: jwt.Secret;
     payload?: any;
     config: jwt.SignOptions;
-}) => string;
+}) => any;

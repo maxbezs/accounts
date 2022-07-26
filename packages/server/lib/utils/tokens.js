@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.generateRefreshToken = exports.generateAccessToken = exports.generateRandomToken = void 0;
 const tslib_1 = require("tslib");
-const jwt = (0, tslib_1.__importStar)(require("jsonwebtoken"));
+const jwt = tslib_1.__importStar(require("jsonwebtoken"));
 const crypto_1 = require("crypto");
 /**
  * Generate a random token string
