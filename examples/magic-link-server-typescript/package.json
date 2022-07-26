@@ -10,7 +10,7 @@
     "test": "pnpm run build"
   },
   "dependencies": {
-    "@maxbezs/database-manager": "^0.33.1",
+    "@maxbezs/database-manager": "^0.0.5",
     "@maxbezs/magic-link": "^0.1.1",
     "@maxbezs/mongo": "^0.34.0",
     "@maxbezs/server": "^0.33.1",

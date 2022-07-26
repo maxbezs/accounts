@@ -3,5 +3,8 @@ export interface CreateUserServicePassword extends CreateUser {
     username?: string;
     email?: string;
     password: string;
-    sdfg?: boolean;
+    receiveOther?: boolean;
+    receiveFastep?: boolean;
+    certifyAge?: boolean;
+    readTerms?: boolean;
 }
