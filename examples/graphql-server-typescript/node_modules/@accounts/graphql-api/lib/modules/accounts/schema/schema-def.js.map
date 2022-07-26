@@ -1,0 +1,1 @@
+{"version":3,"file":"schema-def.js","sourceRoot":"","sources":["../../../../src/modules/accounts/schema/schema-def.ts"],"names":[],"mappings":";;;AACA,2EAA8B;AAE9B,kBAAe,CAAC,MAA4B,EAAE,EAAE,CAC9C,MAAM,CAAC,oBAAoB;IACzB,CAAC,CAAC;QACE,IAAA,qBAAG,EAAA;;iBAEM,MAAM,CAAC,gBAAgB,IAAI,OAAO;oBAC/B,MAAM,CAAC,aAAa,IAAI,UAAU;;CAErD;KACM;IACH,CAAC,CAAC,EAAE,CAAC"}

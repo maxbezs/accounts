@@ -1,0 +1,63 @@
+{
+  "name": "@maxbezs/client",
+  "version": "0.0.5",
+  "description": "Fullstack authentication and accounts-management",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "start": "tsc --watch",
+    "precompile": "pnpm run clean",
+    "compile": "tsc",
+    "publish": "pnpm run compile",
+    "test": "npm run testonly",
+    "test-ci": "npm lint && npm coverage",
+    "testonly": "jest",
+    "test:watch": "jest --watch",
+    "coverage": "npm run testonly -- --coverage"
+  },
+  "files": [
+    "src",
+    "lib"
+  ],
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "jsdom",
+    "setupFiles": [
+      "jest-localstorage-mock"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/accounts-js/accounts/tree/master/packages/client"
+  },
+  "keywords": [
+    "rest",
+    "graphql",
+    "grant",
+    "auth",
+    "authentication",
+    "accounts",
+    "users",
+    "oauth"
+  ],
+  "author": "Tim Mikeladze",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "27.0.2",
+    "@types/node": "16.11.7",
+    "jest": "27.3.1",
+    "jest-localstorage-mock": "2.4.18",
+    "jsonwebtoken": "8.5.1",
+    "localstorage-polyfill": "1.0.1",
+    "rimraf": "3.0.2"
+  },
+  "dependencies": {
+    "@maxbezs/types": "^0.0.5",
+    "jwt-decode": "3.1.2",
+    "tslib": "2.3.1"
+  }
+}

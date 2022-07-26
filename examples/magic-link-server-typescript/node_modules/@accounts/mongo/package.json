@@ -1,0 +1,48 @@
+{
+  "name": "@maxbezs/mongo",
+  "version": "0.0.5",
+  "description": "MongoDB adaptor for accounts",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf lib",
+    "start": "tsc --watch",
+    "precompile": "pnpm run clean",
+    "compile": "tsc",
+    "publish": "pnpm run compile",
+    "testonly": "jest --runInBand --forceExit",
+    "test:watch": "jest --watch",
+    "coverage": "pnpm run testonly -- --coverage"
+  },
+  "files": [
+    "src",
+    "lib"
+  ],
+  "jest": {
+    "testEnvironment": "node",
+    "preset": "ts-jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/accounts-js/accounts/tree/master/packages/database-mongo"
+  },
+  "author": "Leo Pradel",
+  "license": "MIT",
+  "dependencies": {
+    "@maxbezs/mongo-magic-link": "^0.0.5",
+    "@maxbezs/mongo-password": "^0.0.5",
+    "@maxbezs/mongo-sessions": "^0.0.5",
+    "@maxbezs/types": "^0.0.5",
+    "@types/mongodb": "^3.6.20",
+    "mongodb": "^3.4.1",
+    "tslib": "2.3.1"
+  },
+  "devDependencies": {
+    "@maxbezs/database-tests": "^0.0.5",
+    "@types/jest": "27.0.2",
+    "@types/node": "16.11.7",
+    "jest": "27.3.1",
+    "rimraf": "3.0.2",
+    "ts-jest": "27.0.7"
+  }
+}

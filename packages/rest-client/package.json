@@ -1,0 +1,60 @@
+{
+  "name": "@maxbezs/rest-client",
+  "version": "0.0.5",
+  "description": "REST client for accounts",
+  "main": "lib/index",
+  "typings": "lib/index",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "start": "tsc --watch",
+    "precompile": "pnpm run clean",
+    "compile": "tsc",
+    "publish": "pnpm run compile",
+    "test": "npm run testonly",
+    "testonly": "jest",
+    "coverage": "npm run testonly -- --coverage"
+  },
+  "files": [
+    "src",
+    "lib"
+  ],
+  "jest": {
+    "testEnvironment": "jsdom",
+    "preset": "ts-jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/accounts-js/rest/tree/master/packages/rest-client"
+  },
+  "keywords": [
+    "rest",
+    "graphql",
+    "grant",
+    "auth",
+    "authentication",
+    "accounts",
+    "users",
+    "oauth"
+  ],
+  "author": "Tim Mikeladze",
+  "license": "MIT",
+  "peerDependencies": {
+    "@maxbezs/client": "^0.0.5"
+  },
+  "dependencies": {
+    "@maxbezs/types": "^0.0.5",
+    "tslib": "2.3.1"
+  },
+  "devDependencies": {
+    "@maxbezs/client": "^0.0.5",
+    "@types/jest": "27.0.2",
+    "@types/node": "16.11.7",
+    "jest": "27.3.1",
+    "node-fetch": "2.6.1",
+    "rimraf": "3.0.2",
+    "ts-jest": "27.0.7"
+  }
+}

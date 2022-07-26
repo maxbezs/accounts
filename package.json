@@ -1,0 +1,81 @@
+{
+  "private": true,
+  "version": "0.22.0",
+  "scripts": {
+    "start": "lerna exec -- pnpm run start",
+    "clean": "lerna run clean; rm -rf node_modules; rm -rf packages/**/node_modules;",
+    "compile": "lerna run compile",
+    "publish": "lerna publish",
+    "publish:canary": "pnpm run publish -- --canary",
+    "test": "pnpm run test:lint && pnpm run compile && pnpm run coverage",
+    "testonly": "lerna run testonly",
+    "prettier": "prettier --write '**/*.{json,md,js,ts,jsx,tsx,yml}'",
+    "test:lint": "eslint 'packages/*/{src,__tests__}/**/*.ts'",
+    "test:examples": "lerna run test --scope=\"@examples/*\"",
+    "coverage": "lerna run coverage",
+    "codecov": "codecov",
+    "version": "pnpx changeset version && pnpm install --lockfile-only",
+    "release": "pnpm run compile && pnpx changeset publish",
+    "reset": "pnpm run clean; pnpm run install; pnpm run compile",
+    "prepare": "husky install"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "examples/*",
+      "website"
+    ]
+  },
+  "pnpm": {
+    "overrides": {
+      "graphql-modules@1.4.4>@graphql-tools/wrap": "^8.3.0",
+      "@types/eslint": "7.28.2"
+    }
+  },
+  "lint-staged": {
+    "*.{json,md,js,ts,jsx,tsx,yml}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "printWidth": 100
+  },
+  "renovate": {
+    "extends": [
+      "config:base",
+      "schedule:monthly"
+    ],
+    "automerge": true,
+    "major": {
+      "automerge": false
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/js-accounts/accounts"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/changelog-github": "0.4.1",
+    "@changesets/cli": "2.18.0",
+    "@typescript-eslint/eslint-plugin": "5.4.0",
+    "@typescript-eslint/parser": "5.4.0",
+    "eslint": "8.2.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-jest": "25.2.4",
+    "eslint-plugin-prettier": "4.0.0",
+    "husky": "7.0.4",
+    "lerna": "4.0.0",
+    "lint-staged": "12.0.2",
+    "prettier": "2.4.1",
+    "typescript": "4.5.2"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/accounts-js",
+    "logo": "https://opencollective.com/accounts-js/logo.txt"
+  }
+}

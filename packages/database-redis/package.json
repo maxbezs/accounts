@@ -1,0 +1,50 @@
+{
+  "name": "@maxbezs/redis",
+  "version": "0.0.5",
+  "description": "Redis adaptor for accounts",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf lib",
+    "start": "tsc --watch",
+    "precompile": "pnpm run clean",
+    "compile": "tsc",
+    "publish": "pnpm run compile",
+    "testonly": "jest",
+    "test:watch": "jest --watch",
+    "coverage": "pnpm run testonly -- --coverage"
+  },
+  "files": [
+    "src",
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "preset": "ts-jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/accounts-js/accounts/tree/master/packages/database-redis"
+  },
+  "author": "Leo Pradel",
+  "license": "MIT",
+  "dependencies": {
+    "@maxbezs/types": "^0.0.5",
+    "ioredis": "^4.28.0",
+    "shortid": "^2.2.15",
+    "tslib": "2.3.1"
+  },
+  "devDependencies": {
+    "@maxbezs/database-tests": "^0.0.5",
+    "@types/ioredis": "4.27.8",
+    "@types/jest": "27.0.2",
+    "@types/node": "16.11.7",
+    "@types/shortid": "0.0.29",
+    "jest": "27.3.1",
+    "rimraf": "3.0.2",
+    "ts-jest": "27.0.7"
+  }
+}

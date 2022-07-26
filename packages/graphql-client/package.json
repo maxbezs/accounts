@@ -1,0 +1,52 @@
+{
+  "name": "@maxbezs/graphql-client",
+  "version": "0.0.5",
+  "description": "GraphQL client transport for accounts",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf lib",
+    "start": "tsc --watch",
+    "precompile": "pnpm run clean",
+    "compile": "pnpm run generate:graphql && tsc",
+    "generate:graphql": "gql-gen",
+    "publish": "pnpm run compile"
+  },
+  "files": [
+    "src",
+    "lib"
+  ],
+  "jest": {
+    "preset": "ts-jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/js-accounts/graphql.git"
+  },
+  "author": "David Yahalomi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/js-accounts/graphql/issues"
+  },
+  "homepage": "https://github.com/js-accounts/graphql#readme",
+  "peerDependencies": {
+    "graphql": "^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0"
+  },
+  "dependencies": {
+    "@maxbezs/client": "^0.0.5",
+    "@maxbezs/types": "^0.0.5",
+    "@graphql-typed-document-node/core": "3.1.0",
+    "tslib": "2.3.1"
+  },
+  "devDependencies": {
+    "@graphql-codegen/add": "3.1.0",
+    "@graphql-codegen/cli": "2.2.1",
+    "@graphql-codegen/typed-document-node": "2.1.6",
+    "@graphql-codegen/typescript": "2.2.4",
+    "@graphql-codegen/typescript-operations": "2.1.8",
+    "@types/jest": "27.0.2",
+    "graphql": "15.5.1",
+    "jest": "27.3.1",
+    "ts-jest": "27.0.7"
+  }
+}

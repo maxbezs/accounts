@@ -1,0 +1,49 @@
+{
+  "name": "@maxbezs/mongo-magic-link",
+  "version": "0.0.5",
+  "description": "MongoDB magic link adaptor for accounts",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "start": "tsc --watch",
+    "precompile": "pnpm run clean",
+    "compile": "tsc",
+    "publish": "pnpm run compile",
+    "testonly": "jest --runInBand",
+    "test:watch": "jest --watch",
+    "coverage": "pnpm run testonly -- --coverage"
+  },
+  "files": [
+    "src",
+    "lib"
+  ],
+  "jest": {
+    "testEnvironment": "node",
+    "preset": "ts-jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/accounts-js/accounts/tree/master/packages/database-mongo-token"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "mongodb": "^3.4.1"
+  },
+  "dependencies": {
+    "@maxbezs/types": "^0.0.5",
+    "tslib": "2.3.1"
+  },
+  "devDependencies": {
+    "@maxbezs/mongo-password": "^0.0.5",
+    "@types/jest": "27.0.2",
+    "@types/mongodb": "3.6.20",
+    "@types/node": "16.11.7",
+    "jest": "27.3.1",
+    "rimraf": "3.0.2",
+    "ts-jest": "27.0.7"
+  }
+}

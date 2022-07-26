@@ -1,0 +1,56 @@
+{
+  "name": "@maxbezs/types",
+  "version": "0.0.5",
+  "description": "Accounts-js Types",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "start": "tsc --watch",
+    "precompile": "pnpm run clean",
+    "compile": "tsc",
+    "publish": "pnpm run compile",
+    "test": "pnpm run testonly",
+    "test-ci": "pnpm run lint && pnpm run coverage",
+    "testonly": "jest",
+    "test:watch": "pnpm run testonly -- --watch",
+    "coverage": "pnpm run testonly -- --coverage"
+  },
+  "files": [
+    "src",
+    "lib"
+  ],
+  "jest": {
+    "testEnvironment": "node",
+    "preset": "ts-jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/accounts-js/accounts/tree/master/packages/types"
+  },
+  "keywords": [
+    "rest",
+    "graphql",
+    "grant",
+    "auth",
+    "authentication",
+    "accounts",
+    "users",
+    "oauth"
+  ],
+  "author": "Elies Lou (Aetherall)",
+  "license": "MIT",
+  "dependencies": {
+    "tslib": "2.3.1"
+  },
+  "devDependencies": {
+    "@types/jest": "27.0.2",
+    "@types/node": "16.11.7",
+    "jest": "27.3.1",
+    "rimraf": "3.0.2",
+    "ts-jest": "27.0.7"
+  }
+}

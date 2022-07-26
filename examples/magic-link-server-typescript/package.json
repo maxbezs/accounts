@@ -1,0 +1,27 @@
+{
+  "name": "@examples/magic-link-server-typescript",
+  "private": true,
+  "version": "0.32.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon -w src -x ts-node src/index.ts",
+    "build": "tsc",
+    "test": "pnpm run build"
+  },
+  "dependencies": {
+    "@maxbezs/database-manager": "^0.33.1",
+    "@maxbezs/magic-link": "^0.1.1",
+    "@maxbezs/mongo": "^0.34.0",
+    "@maxbezs/server": "^0.33.1",
+    "mongoose": "5.9.25",
+    "tslib": "2.3.1"
+  },
+  "devDependencies": {
+    "@types/mongoose": "5.7.16",
+    "@types/node": "16.11.7",
+    "nodemon": "2.0.14",
+    "ts-node": "10.4.0",
+    "typescript": "4.5.2"
+  }
+}

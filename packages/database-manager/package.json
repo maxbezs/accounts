@@ -1,0 +1,52 @@
+{
+  "name": "@maxbezs/database-manager",
+  "version": "0.0.5",
+  "description": "Accounts Database Manager, allow the use of separate databases for session and user",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "start": "tsc --watch",
+    "precompile": "pnpm run clean",
+    "compile": "tsc",
+    "publish": "pnpm run compile",
+    "test": "pnpm run test",
+    "testonly": "jest --coverage",
+    "coverage": "jest --coverage"
+  },
+  "files": [
+    "src",
+    "lib"
+  ],
+  "jest": {
+    "testEnvironment": "node",
+    "preset": "ts-jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/accounts-js/accounts/tree/master/packages/database-manager"
+  },
+  "keywords": [
+    "accounts",
+    "database",
+    "manager",
+    "users",
+    "sessions"
+  ],
+  "author": "Elies Lou (Aetherall)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "27.0.2",
+    "@types/node": "16.11.7",
+    "jest": "27.3.1",
+    "rimraf": "3.0.2",
+    "ts-jest": "27.0.7"
+  },
+  "dependencies": {
+    "@maxbezs/types": "^0.0.5",
+    "tslib": "2.3.1"
+  }
+}
